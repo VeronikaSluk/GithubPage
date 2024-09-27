@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+}
+nav {
+    background-color: #ff9966;
+    padding: 15px 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffe0cc;
+}
+section {
+    padding: 60px 50px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    text-align: center;
+    background: linear-gradient(90deg, #ff9966, #ff704d);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff704d;
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+ul {
+    margin: 15px 0;
+    padding-left: 40px;
+    font-size: 18px;
+}
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff704d;
+    font-size: 24px;
+}
+.command-box {
+    background-color: white;
+    border-left: 5px solid #ff704d;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+code {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.certificate-placeholder {
+    width: 320px;
+    height: 220px;
+    background-color: white;
+    border: 2px dashed #ff704d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.certificate-placeholder p {
+    font-size: 16px;
+    color: #666;
+}
+footer {
+    background-color: #ff704d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+/* Фони для різних секцій */
+#intro {
+    padding: 190px 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#version-control {
+    background-color: #ffe5cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#features {
+    background-color: #f9f9f9; 
+    margin-top: 20px;
+}
+#commands {
+    background-color: #ffe5cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#certificate {
+    background-color: #ffe5cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#link {
+    background-color: #f9f9f9; 
+    margin-top: 20px;
+}
+#orange-color-section {
+    background-color: #ffe5cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#white-color-section {
+    background-color: #f9f9f9; 
+    margin-top: 20px;
+}

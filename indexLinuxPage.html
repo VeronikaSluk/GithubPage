@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОС GNU/Linux</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Навігація -->
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="indexGitPage.html">Про GitHub</a>
+    <a href="indexLinuxPage.html">ОС Linux</a>
+</nav>
+
+<!-- Головна сторінка -->
+<section id="intro">
+    <h1>ОС GNU/Linux</h1>
+    <p>Ласкаво просимо на сторінку, присвячену операційній системі GNU/Linux. Тут ви дізнаєтеся про базову інформацію про систему, її дистрибутиви, команди та приклад скрипта на BASH.</p>
+</section>
+
+<!-- Коротка інформація про ОС Linux -->
+<section id="white-color-section">
+    <h2>Коротка інформація про ОС GNU/Linux</h2>
+    <p>Linux — це сімейство Unix-подібних операційних систем, які використовують ядро ​​Linux розробки 
+        фінно-американського програміста Лінуса Торвальдса. ОС, що використовують ядро ​​Linux, 
+        називаються дистрибутивами Linux, і є такими ж операційними системами як Microsoft Windows або 
+        Apple macOS, але з однією дуже важливою особливістю — їх вихідні коди є відкритими, оскільки 
+        вони поширюються під ліцензією GNU GPL, яка передбачає створення вільного та відкритого 
+        програмного забезпечення (open source software). Це означає, що будь-який користувач має право 
+        вивчати та змінювати вихідний код.</p>
+</section>
+
+<!-- Популярні дистрибутиви Linux -->
+<section id="white-color-section">
+    <h2>Популярні дистрибутиви GNU/Linux</h2>
+    <ul>
+        <li><strong>Ubuntu</strong> — це ідеальний вибір як для професіоналів, так і для початківців, завдяки своїй простоті та функціональності.</li>
+        <li><strong>Debian</strong> — стабільний та надійний дистрибутив з великим репозиторієм програмного забезпечення. Базовий дистрибутив для багатьох інших версій Linux.</li>
+        <li><strong>Fedora</strong> — швидкий та інноваційний дистрибутив, що часто використовується розробниками через постійні оновлення новітніх технологій.</li>
+        <li><strong>Arch Linux</strong> — дистрибутив для досвідчених користувачів, який надає максимальну гнучкість і налаштування системи.</li>
+        <li><strong>CentOS</strong> — дистрибутив, орієнтований на серверні рішення, базується на кодовій базі Red Hat Enterprise Linux (RHEL).</li>
+    </ul>
+</section>
+
+<!-- Команди для роботи в Linux CLI -->
+<section id="commands">
+    <h2>Приклади команд для роботи в Linux CLI</h2>
+    <div class="command-box">
+        <code>pwd</code>
+        <p>Відображення поточного робочого каталогу.</p>
+    </div>
+    <div class="command-box">
+        <code>echo "текст"</code>
+        <p>Виведення повідомлення або значення змінної на екран.</p>
+    </div>
+    <div class="command-box">
+        <code>ls</code>
+        <p>Перелік файлів і каталогів у поточному каталозі.</p>
+    </div>
+    <div class="command-box">
+        <code>cd [каталог]</code>
+        <p>Переміщення в інший каталог.</p>
+    </div>
+    <div class="command-box">
+        <code>touch [файл]</code>
+        <p>Створення нового порожнього файлу.</p>
+    </div>
+    <div class="command-box">
+        <code>mkdir [каталог]</code>
+        <p>Створення нового каталогу.</p>
+    </div>
+    <div class="command-box">
+        <code>cp [файл1] [файл2]</code>
+        <p>Копіювання файлу з одного місця в інше.</p>
+    </div>
+    <div class="command-box">
+        <code>mv [файл1] [файл2]</code>
+        <p>Переміщення або перейменування файлу.</p>
+    </div>
+    <div class="command-box">
+        <code>rm [файл]</code>
+        <p>Видалення файлу.</p>
+    </div>
+    <div class="command-box">
+        <code>history</code>
+        <p>Відображення історії команд у поточній сесії терміналу.</p>
+    </div>
+</section>
+
+<!-- BASH-скрипт для авторизації -->
+<section id="white-color-section">
+    <h2>BASH-скрипт, що імітує авторизацію в системі</h2>
+    <pre><code>
+#!/bin/bash
+
+# Задання правильних значень логіна і пароля
+CORRECT_USERNAME="admin"
+CORRECT_PASSWORD="password123"
+
+# Запит логіна у користувача
+read -p "Введіть логін: " username
+
+# Запит пароля у користувача
+read -s -p "Введіть пароль: " password
+echo # Перехід на новий рядок
+
+# Перевірка введених даних
+if [[ "$username" == "$CORRECT_USERNAME" && "$password" == "$CORRECT_PASSWORD" ]]; then
+    echo "Авторизація успішна. Вітаємо, $username!"
+else
+    echo "Помилка авторизації. Невірний логін або пароль."
+fi
+    </code></pre>
+    <p>Цей скрипт імітує процес авторизації в системі. Він запитує у користувача логін та пароль, після чого перевіряє правильність введених даних.</p>
+</section>
+
+<!-- Посилання на використану інформацію -->
+<section id="link">
+    <h2>Посилання на використану інформацію</h2>
+    <ul>
+        <li><p><a href="https://acode.com.ua/what-is-linux/">Коротка інформація про ОС GNU/Linux</a></p></li>
+        <li><p><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2%D1%96%D0%B2_Linux">Популярні дистрибутиви GNU/Linux</a></p></li>
+        <li><p><a href="https://acode.com.ua/basic-commands-linux/">Приклади команд для роботи в Linux CLI</a></p></li>
+    </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Linux Навчання. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>
